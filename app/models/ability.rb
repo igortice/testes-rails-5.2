@@ -6,6 +6,12 @@ class Ability
 
     alias_action :create, :read, :update, :destroy, to: :crud
 
-    send(@user.role.to_sym)
+    @user.roles.each { |role| role.to_sym }
+  end
+
+  def user
+  end
+
+  def admin
   end
 end

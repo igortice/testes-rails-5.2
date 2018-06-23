@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2018_06_23_010346) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
-    t.integer "role"
+    t.integer "roles_mask"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
